@@ -1,89 +1,461 @@
 {
-    "transactions": [
-      {
-        "id": 1,
-        "date": "2019-12-01",
-        "description": "Paycheck from Bob's Burgers",
-        "category": "Income",
-        "amount": 1000
+  "farmers": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "contact": {
+        "phone": "+1234567890",
+        "email": "john.doe@example.com"
       },
-      {
-        "id": 2,
-        "date": "2019-12-01",
-        "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-        "category": "Food",
-        "amount": -10.55
-      },
-      {
-        "id": 3,
-        "date": "2019-12-02",
-        "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-        "category": "Food",
-        "amount": -10.55
-      },
-      {
-        "id": 4,
-        "date": "2019-12-04",
-        "description": "Sunglasses, Urban Outfitters",
-        "category": "Fashion",
-        "amount": -24.99
-      },
-      {
-        "id": 5,
-        "date": "2019-12-06",
-        "description": "Venmo, Alice Pays you for Burrito",
-        "category": "Food",
-        "amount": 8.75
-      },
-      {
-        "id": 6,
-        "date": "2019-12-06",
-        "description": "Chipotle",
-        "category": "Food",
-        "amount": -17.59
-      },
-      {
-        "id": 7,
-        "date": "2019-12-07",
-        "description": "Birthday Check from Grandma",
-        "category": "Gift",
-        "amount": 50
-      },
-      {
-        "id": 8,
-        "date": "2019-12-09",
-        "description": "Lyft Ride",
-        "category": "Transportation",
-        "amount": -13.25
-      },
-      {
-        "id": 9,
-        "date": "2019-12-11",
-        "description": "Paycheck from Bob's Burgers",
-        "category": "Income",
-        "amount": 1000
-      },
-      {
-        "id": 10,
-        "date": "2019-12-16",
-        "description": "Tickets, Flatiron Multiplex Cinemas",
-        "category": "Entertainment",
-        "amount": -24
-      },
-      {
-        "id": 11,
-        "date": "2019-12-16",
-        "description": "MTA Vending Machine: MetroCard",
-        "category": "Transportation",
-        "amount": -116.39
-      },
-      {
-        "id": 12,
-        "date": "2019-12-17",
-        "description": "Venmo, Pay Roommate for Rent",
-        "category": "Housing",
-        "amount": -975
+      "farm": {
+        "name": "Green Acres Farm",
+        "location": "123 Country Road, Springfield, IL"
       }
-    ]
-  }
-  
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "contact": {
+        "phone": "+0987654321",
+        "email": "jane.smith@example.com"
+      },
+      "farm": {
+        "name": "Sunny Meadow Farm",
+        "location": "456 Farm Lane, Shelbyville, IL"
+      }
+    },
+    {
+      "id": "dbc0",
+      "name": "Abdul Makhtal",
+      "contact": {
+        "phone": "+3922943040",
+        "email": "abdallamakhtal@gmail.com"
+      },
+      "farm": {
+        "name": "Green Guard Farm",
+        "location": "584 Ngong Road,Nairobi,IL"
+      }
+    },
+    {
+      "id": "55c7",
+      "name": "steve",
+      "contact": {
+        "phone": "08789",
+        "email": "ovostine9250mutwiri@gmail.com"
+      },
+      "farm": {
+        "name": "steve",
+        "location": "fhj"
+      }
+    }
+  ],
+  "buyers": [
+    {
+      "id": "2",
+      "name": "Bob Williams",
+      "contact": {
+        "phone": "+5566778899",
+        "email": "bob.williams@example.com"
+      },
+      "address": "101 Business Park, Shelbyville, IL"
+    },
+    {
+      "id": "c6bc",
+      "name": "steve",
+      "contact": {
+        "phone": "08789",
+        "email": "ovostine9250@gmail.com"
+      },
+      "lookingFor": "manure"
+    },
+    {
+      "id": "dac8",
+      "name": "Abdul",
+      "contact": {
+        "phone": "45665",
+        "email": "ovostine9250mutwiri@gmail.com"
+      },
+      "lookingFor": "cow"
+    },
+    {
+      "id": "4018",
+      "name": "Serah",
+      "contact": {
+        "phone": "08789",
+        "email": "ovostine9250mutwiri@gmail.com"
+      },
+      "lookingFor": "goat"
+    },
+    {
+      "id": "34fe",
+      "name": "Dennis",
+      "contact": {
+        "phone": "08789",
+        "email": "ovostine9250mutwiri@gmail.com"
+      },
+      "lookingFor": "beans"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Organic Apples",
+      "type": "Fruit",
+      "price_per_unit": 2.50,
+      "farmer_id": 1,
+      "image_url": "https://plus.unsplash.com/premium_photo-1671379086168-a5d018d583cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "name": "Free-Range Eggs",
+      "type": "Dairy",
+      "price_per_unit": 3.75,
+      "farmer_id": 2,
+      "image_url": "https://media.istockphoto.com/id/682876180/photo/carton-of-fresh-brown-eggs.jpg?s=2048x2048&w=is&k=20&c=rqD-YF8_z4oSTqKX-ZQ9d_S2TbZRib11z1DIDGv9jdc="
+    },
+    {
+      "id": 3,
+      "name": "Raw Honey",
+      "type": "Condiment",
+      "price_per_unit": 6.00,
+      "farmer_id": 3,
+      "image_url": "https://media.istockphoto.com/id/1064135944/photo/jar-of-raw-honey-with-honey-dipper.jpg?s=2048x2048&w=is&k=20&c=KnIYv-Iv2t26mf67XX_6cT7COu_GmjkPPYb2WivYH5s="
+    },
+    {
+      "id": 4,
+      "name": "Fresh Kale",
+      "type": "Vegetable",
+      "price_per_unit": 1.80,
+      "farmer_id": 4,
+      "image_url": "https://media.istockphoto.com/id/589063764/photo/bunch-of-fresh-organic-kale.jpg?s=2048x2048&w=is&k=20&c=UviCltW1kkwKcfpdAof0OjVgUNNQa6L77dYl38KiC8Y="
+    },
+    {
+      "id": 5,
+      "name": "Heritage Tomatoes",
+      "type": "Vegetable",
+      "price_per_unit": 4.20,
+      "farmer_id": 5,
+      "image_url": "https://media.istockphoto.com/id/475693676/photo/colorful-heirloom-tomatoes.jpg?s=2048x2048&w=is&k=20&c=JTKBNgLCpH7syMdfPHE8DMC5clD6BYcOXnNH5Pz5S8Q="
+    },
+    {
+      "id": 6,
+      "name": "Blueberries",
+      "type": "Fruit",
+      "price_per_unit": 5.50,
+      "farmer_id": 6,
+      "image_url": "https://media.istockphoto.com/id/1154256665/photo/blueberry.jpg?s=2048x2048&w=is&k=20&c=JaFZRb8pj_Vohcc5MnFo0BxA-d-FCkBLfTTB1RHRyOE="
+    },
+    {
+      "id": 7,
+      "name": "Almond Milk",
+      "type": "Beverage",
+      "price_per_unit": 3.20,
+      "farmer_id": 7,
+      "image_url": "https://media.istockphoto.com/id/1134445971/photo/glass-bottle-of-almond-milk-and-almonds-on-a-wooden-table.jpg?s=2048x2048&w=is&k=20&c=R7Feh7z_k6Xyx7iBLPCMLzX75SOYvUJwB_f-5P5Z0P4="
+    },
+    {
+      "id": 8,
+      "name": "Greek Yogurt",
+      "type": "Dairy",
+      "price_per_unit": 4.00,
+      "farmer_id": 8,
+      "image_url": "https://media.istockphoto.com/id/538851152/photo/homemade-greek-yogurt.jpg?s=2048x2048&w=is&k=20&c=O7vRBLFVUmnN5ewpZNa_qvRldpv5gR2F8PafZMEKT_s="
+    },
+    {
+      "id": 9,
+      "name": "Quinoa",
+      "type": "Grain",
+      "price_per_unit": 7.00,
+      "farmer_id": 9,
+      "image_url": "https://media.istockphoto.com/id/1134444439/photo/bowl-of-quinoa.jpg?s=2048x2048&w=is&k=20&c=naOUZDWvRuvEE4dxVWkbB5A8pftHkvBC_SUCJMRLQGk="
+    },
+    {
+      "id": 10,
+      "name": "Sweet Potatoes",
+      "type": "Vegetable",
+      "price_per_unit": 2.30,
+      "farmer_id": 10,
+      "image_url": "https://media.istockphoto.com/id/907030942/photo/sweet-potato.jpg?s=2048x2048&w=is&k=20&c=VDHjwd_SPUUpDi30S3vVCRHW1ymja_zrbic6kB3F0Uw="
+    }
+  ],
+
+  "manures": [
+    {
+      "id": 1,
+      "name": "Alfalfa Meal",
+      "source": "Alfalfa Plant",
+      "nutrients": {
+        "nitrogen": 2.5,
+        "phosphorus": 1,
+        "potassium": 1.5
+      },
+      "release_rate": "Slow to Moderate",
+      "description": "Ground up alfalfa that composts faster in the soil. Best tilled in as an early spring additive."
+    },
+    {
+      "id": 2,
+      "name": "Cottonseed Meal",
+      "source": "Cotton Plant",
+      "nutrients": {
+        "nitrogen": 6,
+        "phosphorus": 2.5,
+        "potassium": 1.5
+      },
+      "release_rate": "Slow",
+      "description": "A by-product of cotton processing, rich in nitrogen and beneficial for acid-loving plants."
+    },
+    {
+      "id": 3,
+      "name": "Soybean Meal",
+      "source": "Soybean Plant",
+      "nutrients": {
+        "nitrogen": 7,
+        "phosphorus": 2,
+        "potassium": 1
+      },
+      "release_rate": "Moderate",
+      "description": "A high-nitrogen fertilizer that is a by-product of soybean oil production."
+    },
+    {
+      "id": 4,
+      "name": "Corn Gluten Meal",
+      "source": "Corn Plant",
+      "nutrients": {
+        "nitrogen": 9,
+        "phosphorus": 0,
+        "potassium": 0
+      },
+      "release_rate": "Immediate",
+      "description": "A by-product of corn processing, used as a pre-emergent weed control and nitrogen source."
+    },
+    {
+      "id": 5,
+      "name": "Seaweed",
+      "source": "Seaweed",
+      "nutrients": {
+        "nitrogen": 1,
+        "phosphorus": 0.5,
+        "potassium": 2.5
+      },
+      "release_rate": "Moderate",
+      "description": "Rich in trace elements and growth hormones, beneficial for overall plant health."
+    },
+    {
+      "id": 6,
+      "name": "Chicken Manure",
+      "source": "Chicken",
+      "nutrients": {
+        "nitrogen": 1.1,
+        "phosphorus": 0.8,
+        "potassium": 0.5
+      },
+      "release_rate": "Fast",
+      "description": "High in nitrogen, great for leafy plants but should be composted before use to avoid burning plants."
+    },
+    {
+      "id": 7,
+      "name": "Cow Manure",
+      "source": "Cow",
+      "nutrients": {
+        "nitrogen": 0.5,
+        "phosphorus": 0.2,
+        "potassium": 0.5
+      },
+      "release_rate": "Slow",
+      "description": "Commonly used manure that improves soil structure and water retention."
+    },
+    {
+      "id": 8,
+      "name": "Horse Manure",
+      "source": "Horse",
+      "nutrients": {
+        "nitrogen": 0.7,
+        "phosphorus": 0.3,
+        "potassium": 0.6
+      },
+      "release_rate": "Moderate",
+      "description": "Rich in organic matter, best composted before use to kill weed seeds.",
+      "image_url": "https://example.com/images/soybean_meal.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Sheep Manure",
+      "source": "Sheep",
+      "nutrients": {
+        "nitrogen": 0.9,
+        "phosphorus": 0.5,
+        "potassium": 0.8
+      },
+      "release_rate": "Moderate",
+      "description": "Dry and pellet-like, easy to handle and rich in nutrients."
+    },
+    {
+      "id": 10,
+      "name": "Goat Manure",
+      "source": "Goat",
+      "nutrients": {
+        "nitrogen": 0.7,
+        "phosphorus": 0.3,
+        "potassium": 0.9
+      },
+      "release_rate": "Moderate",
+      "description": "Similar to sheep manure, dry and pellet-like, good for soil conditioning."
+    },
+    {
+      "id": 11,
+      "name": "Pig Manure",
+      "source": "Pig",
+      "nutrients": {
+        "nitrogen": 0.5,
+        "phosphorus": 0.3,
+        "potassium": 0.5
+      },
+      "release_rate": "Slow",
+      "description": "High in organic matter, should be composted to reduce pathogens."
+    },
+    {
+      "id": 12,
+      "name": "Rabbit Manure",
+      "source": "Rabbit",
+      "nutrients": {
+        "nitrogen": 2.4,
+        "phosphorus": 1.4,
+        "potassium": 0.6
+      },
+      "release_rate": "Fast",
+      "description": "High in nitrogen, can be used directly in the garden without composting."
+    },
+    {
+      "id": 13,
+      "name": "Bat Guano",
+      "source": "Bat",
+      "nutrients": {
+        "nitrogen": 10,
+        "phosphorus": 3,
+        "potassium": 1
+      },
+      "release_rate": "Fast",
+      "description": "Highly concentrated, excellent for flowering and fruiting plants."
+    },
+    {
+      "id": 14,
+      "name": "Fish Emulsion",
+      "source": "Fish",
+      "nutrients": {
+        "nitrogen": 5,
+        "phosphorus": 2,
+        "potassium": 2
+      },
+      "release_rate": "Fast",
+      "description": "Liquid fertilizer, great for quick nutrient boost."
+    },
+    {
+      "id": 15,
+      "name": "Worm Castings",
+      "source": "Worms",
+      "nutrients": {
+        "nitrogen": 1,
+        "phosphorus": 0.5,
+        "potassium": 1.5
+      },
+      "release_rate": "Moderate",
+      "description": "Rich in beneficial microbes, excellent for soil health."
+    },
+    {
+      "id": 16,
+      "name": "Green Manure",
+      "source": "Cover Crops",
+      "nutrients": {
+        "nitrogen": 2,
+        "phosphorus": 0.5,
+        "potassium": 2
+      },
+      "release_rate": "Moderate",
+      "description": "Cover crops like clover and rye, tilled into the soil to improve fertility."
+    },
+    {
+      "id": 17,
+      "name": "Compost",
+      "source": "Organic Waste",
+      "nutrients": {
+        "nitrogen": 1.5,
+        "phosphorus": 0.5,
+        "potassium": 1
+      },
+      "release_rate": "Slow",
+      "description": "Decomposed organic matter, improves soil structure and fertility."
+    },
+    {
+      "id": 18,
+      "name": "Blood Meal",
+      "source": "Animal Blood",
+      "nutrients": {
+        "nitrogen": 12,
+        "phosphorus": 0,
+        "potassium": 0
+      },
+      "release_rate": "Fast",
+      "description": "High in nitrogen, promotes rapid plant growth."
+    },
+    {
+      "id": 19,
+      "name": "Bone Meal",
+      "source": "Animal Bones",
+      "nutrients": {
+        "nitrogen": 4,
+        "phosphorus": 20,
+        "potassium": 0
+      },
+      "release_rate": "Slow",
+      "description": "Rich in phosphorus, great for root development."
+    },
+    {
+      "id": 20,
+      "name": "Feather Meal",
+      "source": "Poultry Feathers",
+      "nutrients": {
+        "nitrogen": 12,
+        "phosphorus": 0,
+        "potassium": 0
+      },
+      "release_rate": "Slow",
+      "description": "High in nitrogen, slow-release fertilizer."
+    },
+    {
+      "id": "1",
+      "name": "Alfalfa Meal",
+      "source": "Alfalfa Plant",
+      "nutrients": {
+        "nitrogen": 2.5,
+        "phosphorus": 1,
+        "potassium": 1.5
+      },
+      "release_rate": "Slow to Moderate",
+      "description": "Ground up alfalfa that composts faster in the soil. Best tilled in as an early spring additive."
+    },
+    {
+      "id": "1",
+      "name": "John Doe",
+      "contact": {
+        "phone": "+1234567890",
+        "email": "john.doe@example.com"
+      },
+      "farm": {
+        "name": "Green Acres Farm",
+        "location": "123 Country Road, Springfield, IL"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "contact": {
+        "phone": "+0987654321",
+        "email": "jane.smith@example.com"
+      },
+      "farm": {
+        "name": "Sunny Meadow Farm",
+        "location": "456 Farm Lane, Shelbyville, IL"
+      }
+    }
+  ]
+}
